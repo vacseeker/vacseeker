@@ -1,1 +1,36 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open sans', 'sans-serif';
+  background-color: aqua;
+}
+
+.hidden {
+  display: none;
+}
+
+.auto-sugg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: beige;
+  color: white;
+  z-index: 100;
+}
+/*# sourceMappingURL=main.css.map */
