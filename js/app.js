@@ -11,7 +11,7 @@ const autoSuggestionsDisplay = document.getElementById('autoSuggestionsDisplay')
 
 
 
-fetch('https://covacc.meganator.repl.co/db')
+fetch('https://vacseeker.github.io/db/db.json')
   .then(response => response.json())
   .then((data) => {
       const data_o = data;             
