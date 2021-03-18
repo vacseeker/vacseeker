@@ -16,7 +16,7 @@ const testdb = new PouchDB('testdb')
 
 db.info().then(function (details) {
     if (details.doc_count == 0 && details.update_seq == 0) {
-        alert ('database does not exist');
+        console.log ('database does not exist');
         // db.destroy().then (function() {console.log('db removed');});
     }
     else console.log('database exists!!!!!!');
@@ -280,7 +280,7 @@ function createRresultNode(heading, body, classN, flagUrl){
 
     
     let headImg = document.createElement('img');
-    console.log(flagUrl)
+    console.log(flagUrl);
     headImg.src = flagUrl;
     headImg.id = 'flag-icon';
 
